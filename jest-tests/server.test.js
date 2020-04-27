@@ -3,7 +3,7 @@ const server = require('../app').server
 const app = require('../app').app
 
 describe('GET /', () => {
-        test("it should respond with exit status 200", async () => {
+        test("it should respond with response status 200", async () => {
                 const response = await request(server)
                 .get("/get")
                 .catch((e) => {
