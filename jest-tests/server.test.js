@@ -9,7 +9,7 @@ describe('GET /', () => {
                 .catch((e) => {
                     console.log(e.message)
                 })
-                expect(response.status).toBe(404)
+                expect(response.status).toBe(200)
                 setTimeout(() => {console.log('test timed out!')} ,2000)
                 
                 console.log(response? 'This was a success!' + response: 'This was a failure')
